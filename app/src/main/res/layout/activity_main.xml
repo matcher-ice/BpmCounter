@@ -7,12 +7,55 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/BpmText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="60sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageButton
+        android:id="@+id/CountButton"
+        android:layout_width="@dimen/large_button_size"
+        android:layout_height="@dimen/large_button_size"
+        android:background="@drawable/large_button"
+        android:contentDescription="@string/count_button_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BpmText"
+        app:srcCompat="@drawable/ic_baseline_music_note_24" />
+
+    <ImageButton
+        android:id="@+id/RestartButton"
+        android:layout_width="@dimen/small_button_size"
+        android:layout_height="@dimen/small_button_size"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/small_button"
+        android:contentDescription="@string/restart_button_description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CountButton"
+        app:srcCompat="@drawable/ic_baseline_restart_alt_24" />
+
+    <ImageButton
+        android:id="@+id/HistoryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/small_button"
+        android:contentDescription="@string/history_button_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CountButton"
+        app:srcCompat="@drawable/ic_baseline_history_24" />
+
+    <ImageButton
+        android:id="@+id/CopyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/small_button"
+        android:contentDescription="@string/copy_button_description"
+        app:layout_constraintEnd_toStartOf="@+id/HistoryButton"
+        app:layout_constraintStart_toEndOf="@+id/RestartButton"
+        app:layout_constraintTop_toBottomOf="@+id/CountButton"
+        app:srcCompat="@drawable/ic_baseline_content_copy_24" />
 </androidx.constraintlayout.widget.ConstraintLayout>
