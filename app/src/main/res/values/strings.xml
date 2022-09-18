@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Bpm Counter</string>
+    <!-- Content description -->
+    <string name="count_button_description">Count button</string>
+    <string name="restart_button_description">Restart button</string>
+    <string name="history_button_description">History button</string>
+    <string name="copy_button_description">Copy button</string>
 </resources>
